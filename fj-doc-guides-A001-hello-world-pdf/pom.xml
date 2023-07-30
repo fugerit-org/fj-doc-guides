@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.fugerit.java</groupId>
+		<artifactId>fj-doc</artifactId>
+		<version>1.4.1-rc.001</version>
+		<relativePath></relativePath>
+	</parent>
+
+	<groupId>org.fugerit.java.guides</groupId>
+	<artifactId>fj-doc-guides-A001-hello-world-pdf</artifactId>
+	<version>0.1.0-rc.001</version>
+
+	<name>fj-doc-guides-A001-hello-world-pdf</name>
+	<description>Fugerit Doc Venus rendered for PDF based on PDFBOX</description>
+	
+	<scm>
+		<connection>scm:git:git://github.com/fugerit-org/fj-doc-guides.git</connection>
+		<developerConnection>scm:git:ssh://github.com/fugerit-org/fj-doc-guides.git</developerConnection>
+		<url>https://github.com/fugerit-org/fj-doc-guides</url>
+	</scm>
+	
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<properties>
+		<maven.compiler.release>11</maven.compiler.release>
+		<fj-doc-version>${project.parent.version}</fj-doc-version>
+	</properties>
+
+	<developers>
+		<developer>
+			<name>Matteo a.k.a. Fugerit</name>
+			<email>m@fugerit.org</email>
+			<organization>Fugerit</organization>
+			<organizationUrl>https://www.fugerit.org</organizationUrl>
+		</developer>
+	</developers>
+
+	<build>
+
+		<plugins>
+			<!-- overrides parent configuration -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<skipTests>false</skipTests>
+				</configuration>
+			</plugin>
+		</plugins>
+
+	</build>
+
+	<dependencies>
+	
+		<!-- module for rendering pdf using Apache FOP -->
+		<dependency>
+			<groupId>org.fugerit.java</groupId>
+			<artifactId>fj-doc-mod-fop</artifactId>
+		</dependency>		
+	
+	</dependencies>
+
+	<organization>
+		<url>https://www.fugerit.org</url>
+		<name>Fugerit</name>
+	</organization>
+	
+	<url>https://venusguides.fugerit.org/</url>
+	
+</project>

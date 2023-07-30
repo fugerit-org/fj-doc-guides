@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc
+	xmlns="http://javacoredoc.fugerit.org"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://javacoredoc.fugerit.org https://www.fugerit.org/data/java/doc/xsd/doc-2-0.xsd" > 
+
+  <metadata>
+	<!-- Margin for document : left;right;top;bottom -->
+	<info name="margins">10;10;10;30</info>  
+	<!-- documenta meta information -->
+	<info name="doc-title">Hello World</info>
+	<info name="doc-author">fugerit79</info>
+	<info name="doc-language">en</info>
+  </metadata>
+  <body>
+	<para>Hello World!</para>
+  </body>
+
+</doc>
+  
