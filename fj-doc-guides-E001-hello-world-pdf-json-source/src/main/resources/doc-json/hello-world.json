@@ -1,0 +1,32 @@
+{
+	"xmlns" : "http://javacoredoc.fugerit.org",
+	"xsi:schemaLocation" : "http://javacoredoc.fugerit.org https://www.fugerit.org/data/java/doc/xsd/doc-2-0.xsd",
+	"xmlns:xsi" : "http://www.w3.org/2001/XMLSchema-instance",
+	"_t" : "doc",
+	"_e" : [ {
+		"_t" : "metadata",
+		"_e" : [ {
+			"name" : "margins",
+			"_t" : "info",
+			"_v" : "10;10;10;30"
+		}, {
+			"name" : "doc-title",
+			"_t" : "info",
+			"_v" : "Hello World"
+		}, {
+			"name" : "doc-author",
+			"_t" : "info",
+			"_v" : "fugerit79"
+		}, {
+			"name" : "doc-language",
+			"_t" : "info",
+			"_v" : "en"
+		} ]
+	}, {
+		"_t" : "body",
+		"_e" : [ {
+			"_t" : "para",
+			"_v" : "Hello World!"
+		} ]
+	} ]
+}
