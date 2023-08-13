@@ -5,13 +5,13 @@
 	<parent>
 		<groupId>org.fugerit.java</groupId>
 		<artifactId>fj-doc</artifactId>
-		<version>1.4.1-rc.001</version>
+		<version>1.4.4</version>
 		<relativePath></relativePath>
 	</parent>
 
 	<groupId>org.fugerit.java.guides</groupId>
 	<artifactId>fj-doc-guides-E001-hello-world-pdf-json-source</artifactId>
-	<version>0.1.0-rc.001</version>
+	<version>0.1.0-rc.3</version>
 
 	<name>fj-doc-guides-E001-hello-world-pdf-json-source</name>
 	<description>Fugerit Doc Venus rendered for PDF based on PDFBOX</description>
