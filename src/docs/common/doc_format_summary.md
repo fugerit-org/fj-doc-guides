@@ -11,7 +11,8 @@ This page is an entry point for the Venus Document Format.
 When writing a sample Venus Document, it is possible to draw from some online resources :
 1. [Venus DOC XML Schema Definition](https://www.fugerit.org/data/java/doc/xsd/doc-2-0.xsd) - Current version of the Venus DOC XSD, the main source for writing valid Venus document meta model.
 2. [Venus DOC XML Reference](https://venusdocs.fugerit.org/fj-doc-base/src/main/docs/doc_xsd_config_ref.html) - the informations contained in the previous XSD in HTML format for convenience.
-3. [The Venus Guides](https://venusguides.fugerit.org/) - Source for many examples and guidelines (this page of part of it!)
+3 [Venus DOC meta informations reference](https://venusdocs.fugerit.org/docs/html/doc_meta_info.html) - documentations for existing 'info' properties for 'metadata' section.
+4. [The Venus Guides](https://venusguides.fugerit.org/) - Source for many examples and guidelines (this page of part of it!).
 
 These resources should help you in writing the xml source document which can be used as input to Fugerit Doc Venus to output various formats.
 
