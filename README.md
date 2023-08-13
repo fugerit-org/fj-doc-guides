@@ -8,6 +8,7 @@ See the [CHANGELOG.md](CHANGELOG.md) for project updates.
 
 ### General topics
 * [Project history](src/docs/common/history.md)
+* [Doc Format Summary](src/docs/common/doc_format_summary.md)
 
 ### Guidelines
 * ['Framework basics'](src/docs/guidelines/G001_basics.md) - This document explains the basic of the xml source format
