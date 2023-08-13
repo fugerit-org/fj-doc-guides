@@ -1,5 +1,6 @@
 # Venus Guidelines : History 
 
+## Version : 1 (2023-08-13)
 
 The Venus library started a lot of years ago.
 

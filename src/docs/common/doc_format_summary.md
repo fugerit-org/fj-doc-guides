@@ -2,6 +2,8 @@
 
 [index](../../../README.md)
 
+## Version : 1 (2023-08-13)
+
 ## Description
 
 This page is an entry point for the Venus Document Format.
