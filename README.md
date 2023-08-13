@@ -7,9 +7,9 @@ See the [CHANGELOG.md](CHANGELOG.md) for project updates.
 ## Index
 
 ### General topics
-* [Doc Format Summary](src/docs/common/doc_format_summary.md)
-* [From XML to JSON or YAML source](src/docs/common/doc_from_xml_to_json_or_yaml.md)
-* [Project history](src/docs/common/history.md)
+* [Venus Doc Format entry point](src/docs/common/doc_format_summary.md) - a starting point for writing the Venus XML meta model
+* [From XML to JSON or YAML source](src/docs/common/doc_from_xml_to_json_or_yaml.md) - informations for using json or yaml as source instead of XML
+* [Project history](src/docs/common/history.md) - some history of the project and the document format
 
 ### Guidelines
 * ['Framework basics'](src/docs/guidelines/G001_basics.md) - This document explains the basic of the xml source format
