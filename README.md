@@ -7,9 +7,9 @@ See the [CHANGELOG.md](CHANGELOG.md) for project updates.
 ## Index
 
 ### General topics
-* [Project history](src/docs/common/history.md)
 * [Doc Format Summary](src/docs/common/doc_format_summary.md)
 * [From XML to JSON or YAML source](src/docs/common/doc_from_xml_to_json_or_yaml.md)
+* [Project history](src/docs/common/history.md)
 
 ### Guidelines
 * ['Framework basics'](src/docs/guidelines/G001_basics.md) - This document explains the basic of the xml source format

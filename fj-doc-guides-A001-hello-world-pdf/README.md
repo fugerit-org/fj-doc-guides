@@ -57,6 +57,12 @@ This will be the actual document content : [hello-world.xml](src/main/resources/
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://javacoredoc.fugerit.org https://www.fugerit.org/data/java/doc/xsd/doc-2-0.xsd" > 
 
+  <!--
+  	This is a Venus Fugerit Doc (https://github.com/fugerit-org/fj-doc) XML Source Document.
+  	For documentation on how to write a valid Venus Doc XML Meta Model refer to : 
+  	https://venusguides.fugerit.org/src/docs/common/doc_format_summary.html
+  -->
+
   <metadata>
 	<!-- Margin for document : left;right;top;bottom -->
 	<info name="margins">10;10;10;30</info>  
