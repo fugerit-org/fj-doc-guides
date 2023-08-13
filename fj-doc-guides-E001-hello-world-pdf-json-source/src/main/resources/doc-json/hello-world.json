@@ -2,6 +2,7 @@
 	"xmlns" : "http://javacoredoc.fugerit.org",
 	"xsi:schemaLocation" : "http://javacoredoc.fugerit.org https://www.fugerit.org/data/java/doc/xsd/doc-2-0.xsd",
 	"xmlns:xsi" : "http://www.w3.org/2001/XMLSchema-instance",
+	"comment":"For documentation on how to write a valid Venus Doc JSON Meta Model refer to : https://venusguides.fugerit.org/src/docs/common/doc_format_summary.html",
 	"_t" : "doc",
 	"_e" : [ {
 		"_t" : "metadata",
