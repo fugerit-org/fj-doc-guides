@@ -6,6 +6,9 @@ See the [CHANGELOG.md](CHANGELOG.md) for project updates.
 
 ## Index
 
+### General topics
+* [Project history](src/docs/common/history.md)
+
 ### Guidelines
 * ['Framework basics'](src/docs/guidelines/G001_basics.md) - This document explains the basic of the xml source format
 * ['The source XML document format'](src/docs/guidelines/G002_xml_format.md) - This document explains the basics of the xml source format
