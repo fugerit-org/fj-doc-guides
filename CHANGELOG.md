@@ -3,6 +3,7 @@
 ## 0.1.0-rc.3 - 2023-08-13
 * [Project history](src/docs/common/history.md) section
 * [Doc Format Summary](src/docs/common/doc_format_summary.md) entry point section
+* [From XML to JSON or YAML source](src/docs/common/doc_from_xml_to_json_or_yaml.md) section
 
 ## 0.1.0-rc.2 - 2023-08-06
 * [Venus Guide E001 : Hello World PDF JSON Source](fj-doc-guides-E001-hello-world-pdf-json-source/README.md)
