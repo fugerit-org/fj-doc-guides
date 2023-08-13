@@ -44,3 +44,5 @@ Here is a very simple example of a xml document compliant with the Venus DOC XSD
 
 </doc>
 ```
+
+## [From XML to JSON or YAML source](doc_from_xml_to_json_or_yaml.md)
