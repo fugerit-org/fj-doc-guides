@@ -41,4 +41,19 @@
 	
 	<url>https://www.fugerit.org/perm/venus/</url>
 	
+	<dependencyManagement>
+		
+		<dependencies>
+			
+			<dependency>
+			    <groupId>org.slf4j</groupId>
+			    <artifactId>slf4j-simple</artifactId>
+			    <version>2.0.9</version>
+			    <scope>test</scope>
+			</dependency>
+			
+		</dependencies>
+		
+	</dependencyManagement>
+	
 </project>
