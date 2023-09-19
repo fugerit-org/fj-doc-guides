@@ -26,11 +26,13 @@
 	</licenses>
 
 	<properties>
-		<fj-doc-version>3.0.4</fj-doc-version>	
+		<fj-doc-version>3.0.6</fj-doc-version>	
 	</properties>
 	
 	<modules>
 		<module>fj-doc-guides-A001-hello-world-pdf</module>
+		<module>fj-doc-guides-A002-full-document</module>
+		<module>fj-doc-guides-A003-full-document-freemarker</module>
 		<module>fj-doc-guides-E001-hello-world-pdf-json-source</module>
 	</modules>
 	

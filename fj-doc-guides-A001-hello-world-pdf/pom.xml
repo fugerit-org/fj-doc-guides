@@ -10,8 +10,8 @@
 
 	<artifactId>fj-doc-guides-A001-hello-world-pdf</artifactId>
 
-	<name>fj-doc-guides-A001-hello-world-pdf</name>
-	<description>Fugerit Doc Venus rendered for PDF based on PDFBOX</description>
+	<name>Hello world from Venus - Fugerit Doc</name>
+	<description>Sample project showing how to create a PDF from the xml format</description>
 	
 	<scm>
 		<connection>scm:git:git://github.com/fugerit-org/fj-doc-guides.git</connection>
