@@ -52,10 +52,28 @@
 	
 	<br/>
 	
+	<h head-level="3" size="12">1.2 Sample table : special characteristics</h>
+	
+	<table colwidths="30;30;40" columns="3" width="100">
+		<row header="true">
+			<cell align="center"><para style="bold">Name</para></cell>
+			<cell align="center"><para style="bold">Surname</para></cell>
+			<cell align="center"><para style="bold">Title</para></cell>
+		</row>
+		<row>
+			<cell><para>${user.name}</para></cell>
+			<cell><para>${user.surname}</para></cell>
+			<cell><para>${user.title}</para></cell>
+		</row>
+	</table>
+	
+	<br/>
+	
 	<h head-level="2" id="sec_2" size="14">2. Sample lists</h>
 	
 	<para>This sections contains some sample lists.</para>
-		
+	
+	<#-- iterate over list types -->
 	<#list listTests as listType>
 	<h head-level="3" size="12">Sample list ${1+listType?index} : ${listType.value}</h>
 	<list list-type="${listType.key}">

@@ -9,6 +9,7 @@ import java.util.List;
 
 import org.fugerit.java.doc.base.config.DocException;
 import org.fugerit.java.doc.base.config.DocTypeHandler;
+import org.fugerit.java.doc.base.config.DocTypeHandlerXMLUTF8;
 import org.fugerit.java.doc.freemarker.html.FreeMarkerHtmlTypeHandlerUTF8;
 import org.fugerit.java.doc.guides.fulldocument.fm.facade.FullDocumentFmFacade;
 import org.fugerit.java.doc.guides.fulldocument.fm.facade.UserData;
@@ -22,7 +23,11 @@ public class TestFullDocumentFmFacade {
 
 	private static final Logger log = LoggerFactory.getLogger( TestFullDocumentFmFacade.class );
 	
-	private static final DocTypeHandler[] HANDLERS =  { PdfFopTypeHandler.HANDLER, FreeMarkerHtmlTypeHandlerUTF8.HANDLER };
+	// three formats will be rendered in this example
+	private static final DocTypeHandler[] HANDLERS =  { 
+			PdfFopTypeHandler.HANDLER, 						// PDF through Apache FOP
+			FreeMarkerHtmlTypeHandlerUTF8.HANDLER,			// HTML through Apache FreeMarker
+			DocTypeHandlerXMLUTF8.HANDLER };				// XML as source fugerit doc format XML
 	
 	@Test
 	public void testFullDocument() throws IOException, DocException {
@@ -30,6 +35,7 @@ public class TestFullDocumentFmFacade {
 			File outputFile = new File(  "target", "full-document."+handler.getType() ); // output file
 			log.info( "outputFile : {}", outputFile );
 			try ( OutputStream os = new FileOutputStream( outputFile ) ) {
+				// custom data to be added to the template via Apache FreeMarker
 				List<UserData> listUsers = Arrays.asList( 
 						new UserData( "Marie" , "Curie", "Checmist"),
 						new UserData( "Alan" , "Turing", "IT Specialist")
