@@ -86,39 +86,36 @@ It will generate a XML document which adheres to [doc xsd](https://www.fugerit.o
 
 ## 3. Create the java cod for document generation
 
-This is a simple facade [FullDocumentFmFacade](src/main/java/org/fugerit/java/doc/guides/fulldocument/fm/facade/FullDocumentFmFacade.java) which will just : 
+This is a simple facade [HelloWorldFreeMarkerFacade](src/main/java/org/fugerit/java/doc/guides/helloworld/fm/facade/HelloWorldFreeMarkerFacade.java) which will just : 
 
 - create a simple FreemarkerDocProcessConfig (more complex examples will be available)
 - add some ismple date
 - implement the generateFullDocument() method which will do the job
 
 ```
+public class HelloWorldFreeMarkerFacade {
+
+	// in the simple config, there is a default method mapping any chainId to a template with the path ${chainId}.ftl
 	private static final FreemarkerDocProcessConfig SIMPLE_CONFIG = 
 			// SafeFunction.get() will execute the configuration code and re-throw a ConfigRuntimeException if any exception is thrown
-			SafeFunction.get( () -> FreemarkerDocProcessConfigFacade.newSimpleConfig( "A003-sample-config" , "/fj-freemarker-sample-template/" ) );
+			SafeFunction.get( () -> FreemarkerDocProcessConfigFacade.newSimpleConfig( "A004-sample-config" , "/fj-freemarker-sample-template/" ) );
 	
-	private static final List<MapEntry<String, String>> LIST_TESTS = Arrays.asList(
-			new MapEntry<>( "ul", "default unordered list"),
-			new MapEntry<>( "uld", "dotted unordered list"),
-			new MapEntry<>( "ulm", "square unordered list"),
-			new MapEntry<>( "ol", "default ordered list"),
-			new MapEntry<>( "oll", "letter ordered list"),
-			new MapEntry<>( "oln", "numbered ordered list")
-		);
+	private static final String CHAIN_ID = "hello-world";	// it will map to /fj-freemarker-sample-template/hello-world.ftl
 	
-	public void generateFullDocument( OutputStream os, DocTypeHandler handler, List<UserData> listUsers ) throws DocException {
+	public void generateDocument( OutputStream os, DocTypeHandler handler, String docTitle ) throws DocException {
 		// wraps any exception as a DocException
 		DocException.apply( () -> {
-			DocProcessContext context = DocProcessContext.newContext( "listUsers", listUsers );
-			context.setAttribute( "listTests" , LIST_TESTS );
-			SIMPLE_CONFIG.fullProcess( "full-document", context, handler, DocOutput.newOutput(os) );
+			DocProcessContext context = DocProcessContext.newContext( "docTitle", docTitle );
+			SIMPLE_CONFIG.fullProcess( CHAIN_ID, context, handler, DocOutput.newOutput(os) );
 		} );
 	}
+	
+}
 ```
 
 ## 4. Sample Junit to activate the code
 
-This is a simple JUnit to activate the code [TestFullDocumentFmFacade](src/test/java/test/org/fugerit/java/doc/guides/fulldocument/fm/facade/TestFullDocumentFmFacade.java) , it will : 
+This is a simple JUnit to activate the code [TestHelloWorldFreeMarkerFacade](src/test/java/test/org/fugerit/java/doc/guides/helloworld/fm/facade/TestHelloWorldFreeMarkerFacade.java) , it will : 
 
 - define the handlers for rendering the desired output formats
 - add some test data

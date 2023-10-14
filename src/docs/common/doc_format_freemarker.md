@@ -10,8 +10,8 @@ This page contains guidelines for using the Venus DOC XML format with [Apache Fr
 
 Some examples are available, for instance : 
 
-- [Venus Guide A004 : Apache FreeMarker Hello World Example](../../../fj-doc-guides-A004-freemarker-hello-world/README.md)
-- [Venus Guide A003 : Apache FreeMarker Full document example](../../../fj-doc-guides-A003-full-document-freemarker/README.md)
+- [Venus Guide A004 : Apache FreeMarker Hello World](../../../fj-doc-guides-A004-freemarker-hello-world/README.md)
+- [Venus Guide A003 : Apache FreeMarker Full document](../../../fj-doc-guides-A003-full-document-freemarker/README.md)
 
 The step for generating documents with Fugerit Venus Doc Format and Apache FreeMarker are : 
 
@@ -96,9 +96,9 @@ Notes :
 
 As noted above, when using Apache FreeMarker to render Venus DOC Format XML, xml characters should be escaped.
 
-The recommended way to do so is through the [FreeMarker output_format directive](https://freemarker.apache.org/docs/ref_directive_outputformat.html) for further info).
+The recommended way to do so is through the [FreeMarker directive](https://freemarker.apache.org/docs/ref_directive_outputformat.html) : `<#ftl output_format="XML">`
 
-Albeit not recommended, it is possible to use custom escape method like a normal CDATA section, for instance : `<![CDATA[${docTitle}]]>`
+Albeit not recommended, it is possible to use a CDATA section : `<![CDATA[${docTitle}]]>`
 
 Or a custom macro : `<@escapeXml text=docTitle/>`
 
