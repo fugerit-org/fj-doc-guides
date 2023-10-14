@@ -21,7 +21,7 @@ public class TestHelloWorldFreeMarkerFacade {
 	public void testGenerateDocument() throws IOException, DocException {
 		DocTypeHandler handler = PdfFopTypeHandler.HANDLER;	// the handler for desired output, in this case PDF
 		String docTitle = "Hello World with Apache FreeMarker Template!";
-		File outputFile = new File(  "target", "full-document."+handler.getType() ); // output file
+		File outputFile = new File(  "target", "hello-world."+handler.getType() ); // output file
 		log.info( "outputFile : {}", outputFile );
 		try ( OutputStream os = new FileOutputStream( outputFile ) ) {
 			HelloWorldFreeMarkerFacade facade = new HelloWorldFreeMarkerFacade(); // the facade to generate the document

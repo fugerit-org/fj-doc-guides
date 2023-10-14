@@ -1,4 +1,4 @@
-# Venus Guide A004 : Apache FreeMarker Hello World Example
+# Venus Guide A004 : Apache FreeMarker Hello World
 
 [Index](../README.md)
 
@@ -122,35 +122,21 @@ This is a simple JUnit to activate the code [TestHelloWorldFreeMarkerFacade](src
 - iterate all the handler and output them in `target/` directory
 
 ```
-	// three formats will be rendered in this example
-	private static final DocTypeHandler[] HANDLERS =  { 
-			PdfFopTypeHandler.HANDLER, 					// PDF through Apache FOP
-			FreeMarkerFopTypeHandler.HANDLER_UTF8,			// XLS-FO format
-			FreeMarkerHtmlTypeHandlerEscapeUTF8.HANDLER,	// HTML through Apache FreeMarker
-			DocTypeHandlerXMLUTF8.HANDLER };				// XML as source fugerit doc format XML
-	
 	@Test
-	public void testFullDocument() throws IOException, DocException {
-		// custom data to be added to the template via Apache FreeMarker
-		List<UserData> listUsers = Arrays.asList( 
-				new UserData( "Marie" , "Curie", ">> Checmist"),
-				new UserData( "Alan" , "Turing", "<IT/> Specialist")
-			);
-		for ( DocTypeHandler handler : HANDLERS ) {
-			File outputFile = new File(  "target", "full-document."+handler.getType() ); // output file
-			log.info( "outputFile : {}", outputFile );
-			try ( OutputStream os = new FileOutputStream( outputFile ) ) {
-				FullDocumentFmFacade facade = new FullDocumentFmFacade(); // the facade to generate the document
-				facade.generateFullDocument(os, handler, listUsers); // actual document generation
-				log.info( "Generated full documenti pdf file in path : {}", outputFile.getCanonicalPath() );
-				Assert.assertTrue( outputFile.exists() );
-			}	
+	public void testGenerateDocument() throws IOException, DocException {
+		DocTypeHandler handler = PdfFopTypeHandler.HANDLER;	// the handler for desired output, in this case PDF
+		String docTitle = "Hello World with Apache FreeMarker Template!";
+		File outputFile = new File(  "target", "hello-world."+handler.getType() ); // output file
+		log.info( "outputFile : {}", outputFile );
+		try ( OutputStream os = new FileOutputStream( outputFile ) ) {
+			HelloWorldFreeMarkerFacade facade = new HelloWorldFreeMarkerFacade(); // the facade to generate the document
+			facade.generateDocument(os, handler, docTitle); // actual document generation
+			log.info( "Generated full documenti pdf file in path : {}", outputFile.getCanonicalPath() );
+			Assert.assertTrue( outputFile.exists() );
 		}
 	}
 ```
 
-If everything worked fine, in the path *target/full-document.pdf* it will be possible to find the generated document. (together with html, fo and xml format).
-
-**Note about DocTypeHandlerXMLUTF8 handler** : this can be used to inspect the Venus XML Doc format after Apache FreeMarker substitution.
+If everything worked fine, in the path *target/hello-world.pdf* it will be possible to find the generated document.
 
 If you find any problem, you can submit an issue on the on this project github repository [https://github.com/fugerit-org/fj-doc-guides](https://github.com/fugerit-org/fj-doc-guides)
