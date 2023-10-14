@@ -1,3 +1,4 @@
+<#ftl output_format="XML"><#-- Set the output format for XML, not mandatory but reccomended, otherwise escaping should be handled in a cusomt way, for example through CDATA sections -->
 <?xml version="1.0" encoding="utf-8"?>
 <doc
 	xmlns="http://javacoredoc.fugerit.org"
@@ -29,6 +30,8 @@
 	
 	<para>This documents tries to show all the xml document format features.</para>
 	
+	<para>Current Apache FreeMarker output format : ${.output_format}.</para>
+
 	<h head-level="2" id="sec_1" size="14">1. Sample tables</h>
 	
 	<para>This sections contains some sample tables.</para>
@@ -60,11 +63,13 @@
 			<cell align="center"><para style="bold">Surname</para></cell>
 			<cell align="center"><para style="bold">Title</para></cell>
 		</row>
+		<#list listUsers as user>
 		<row>
 			<cell><para>${user.name}</para></cell>
 			<cell><para>${user.surname}</para></cell>
 			<cell><para>${user.title}</para></cell>
 		</row>
+		</#list>
 	</table>
 	
 	<br/>

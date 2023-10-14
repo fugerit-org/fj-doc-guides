@@ -8,10 +8,10 @@
 		<version>0.1.0</version>
 	</parent>
 
-	<artifactId>fj-doc-guides-A001-hello-world-pdf</artifactId>
+	<artifactId>fj-doc-guides-A004-freemarker-hello-world</artifactId>
 
-	<name>Hello world from Venus - Fugerit Doc</name>
-	<description>Sample project showing how to create a PDF from the xml format</description>
+	<name>Sample project showing an hello world with freemarker generation</name>
+	<description>This just generate a sample Hello World with a Apache Freemarker template</description>
 	
 	<scm>
 		<connection>scm:git:git://github.com/fugerit-org/fj-doc-guides.git</connection>
@@ -63,6 +63,12 @@
 			<artifactId>fj-doc-mod-fop</artifactId>
 			<version>${fj-doc-version}</version>
 		</dependency>		
+	
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+		</dependency>
 	
 		<dependency>
 		    <groupId>org.slf4j</groupId>

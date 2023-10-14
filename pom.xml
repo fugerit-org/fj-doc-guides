@@ -8,13 +8,13 @@
 	<parent>
 		<groupId>org.fugerit.java</groupId>
 		<artifactId>fj-bom</artifactId>
-		<version>1.4.0</version>
+		<version>1.4.7</version>
 		<relativePath></relativePath>
 	</parent>
 
 	<name>Fugerit Venus Guides</name>
 	<description>Collections of guides for Fugerit Venus Document generation</description>
-	<version>0.1.0-SNAPSHOT</version>
+	<version>0.1.0</version>
 	<packaging>pom</packaging>
 
 	<licenses>
@@ -26,13 +26,14 @@
 	</licenses>
 
 	<properties>
-		<fj-doc-version>3.0.6</fj-doc-version>	
+		<fj-doc-version>3.1.4</fj-doc-version>	
 	</properties>
 	
 	<modules>
 		<module>fj-doc-guides-A001-hello-world-pdf</module>
 		<module>fj-doc-guides-A002-full-document</module>
 		<module>fj-doc-guides-A003-full-document-freemarker</module>
+		<module>fj-doc-guides-A004-freemarker-hello-world</module>
 		<module>fj-doc-guides-E001-hello-world-pdf-json-source</module>
 	</modules>
 	
