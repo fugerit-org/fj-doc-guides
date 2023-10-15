@@ -96,7 +96,8 @@ Notes :
 
 As noted above, when using Apache FreeMarker to render Venus DOC Format XML, xml characters should be escaped.
 
-The recommended way to do so is through the [FreeMarker directive](https://freemarker.apache.org/docs/ref_directive_outputformat.html) : `<#ftl output_format="XML">`
+The recommended way to do so is through the [FreeMarker directive](https://freemarker.apache.org/docs/ref_directive_outputformat.html) : `<#ftl output_format="XML">`  
+For auto escape behavior see [Auto-escaping and output formats](https://freemarker.apache.org/docs/dgui_misc_autoescaping.html)
 
 Albeit not recommended, it is possible to use a CDATA section : `<![CDATA[${docTitle}]]>`
 
