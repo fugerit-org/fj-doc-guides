@@ -28,11 +28,12 @@ public class FullDocumentFmFacade {
 			new MapEntry<>( "oln", "numbered ordered list")
 		);
 	
-	public void generateFullDocument( OutputStream os, DocTypeHandler handler, List<UserData> listUsers ) throws DocException {
+	public void generateFullDocument( OutputStream os, DocTypeHandler handler, List<PeopleData> listPeople ) throws DocException {
 		// wraps any exception as a DocException
 		DocException.apply( () -> {
-			DocProcessContext context = DocProcessContext.newContext( "listUsers", listUsers );
-			context.setAttribute( "listTests" , LIST_TESTS );
+			DocProcessContext context = DocProcessContext.newContext( "listPeople", listPeople )
+					.withAtt( "docTitle" , "Full document sample demo" )
+					.withAtt(  "listTests", LIST_TESTS);
 			SIMPLE_CONFIG.fullProcess( "full-document", context, handler, DocOutput.newOutput(os) );
 		} );
 	}

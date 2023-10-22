@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @AllArgsConstructor
-public class UserData {
+public class PeopleData {
 
 	@Getter private String name;
 	
