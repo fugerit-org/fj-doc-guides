@@ -13,6 +13,8 @@ This projects provides simple guides to [Venus - Fugerit Document Generation Fra
 
 ## Index
 
+A new [Wizard](src/docs/wizard/index.md) section is available, guiding you through some common scenarios.
+
 ### General topics
 
 - [Venus Doc Format entry point](src/docs/common/doc_format_summary.md) - a starting point for writing the Venus XML meta model
