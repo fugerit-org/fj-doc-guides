@@ -5,6 +5,7 @@
 This sections includes some common scenarios in using [Fugerit Doc Venus](https://github.com/fugerit-org/fj-doc), organized as a wizard.
 
 Main scenarios
-- [Creates a new project already configured for Venus](fj-doc-maven-plugin_init.md)
-- [Add venus configuration and sample to an existing maven project](fj-doc-maven-plugin_add.md)
-- [Configuration migration from DocProcessConfig to FreemarkerDocProcessConfig](fj-doc-config_migration.md)
+- [Brand new project](fj-doc-maven-plugin_init.md)
+- [Existing project, not yet configured wtih Venus](fj-doc-maven-plugin_add.md)
+- [Existing project with legacy DocProcessConfig migration guide](fj-doc-config_migration.md)
+- [Add features to existing project](fj-doc-existing_project.md)
