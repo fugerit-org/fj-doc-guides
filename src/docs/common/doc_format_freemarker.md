@@ -1,5 +1,17 @@
 # Venus Guidelines : Doc Format and Apache FreeMarker guidelines
 
+## Deprecation notice start
+
+This guide has been deprecated and will not be maintained, now you can refer to the new official guide 
+(built it in the main [Fugerit Venus Doc repository](https://github.com/fugerit-org/fj-doc)) :
+
+[![HTML - Guide](https://img.shields.io/badge/HTML-Guide-blue?style=for-the-badge)](https://venusdocs.fugerit.org/guide/ "Go to project HTML documentation")
+[![PDF - Guide](https://img.shields.io/badge/PDF-Guide-red?style=for-the-badge)](https://venusdocs.fugerit.org/guide/fj-doc-guide.pdf "Go to project PDF documentation")
+
+Especially the [Dynamic Data : FreeMarker](https://venusdocs.fugerit.org/guide/#doc-freemarker-entry-point).
+
+## Deprecation notice end
+
 [Venus Guides index](../../../README.md)
 
 ## Version : 1 (2023-10-14)

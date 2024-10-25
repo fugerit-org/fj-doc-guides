@@ -1,5 +1,15 @@
 # Guides to Venus - Fugerit Document Generation Framework (fj-doc)  
 
+## Deprecation notice start
+
+This guide has been deprecated and will not be maintained, now you can refer to the new official guide
+(built it in the main [Fugerit Venus Doc repository](https://github.com/fugerit-org/fj-doc)) :
+
+[![HTML - Guide](https://img.shields.io/badge/HTML-Guide-blue?style=for-the-badge)](https://venusdocs.fugerit.org/guide/ "Go to project HTML documentation")
+[![PDF - Guide](https://img.shields.io/badge/PDF-Guide-red?style=for-the-badge)](https://venusdocs.fugerit.org/guide/fj-doc-guide.pdf "Go to project PDF documentation")
+
+## Deprecation notice end
+
 This projects provides simple guides to [Venus - Fugerit Document Generation Framework (fj-doc)](https://github.com/fugerit-org/fj-doc) project.
 
 [![Keep a Changelog v1.1.0 badge](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.1.0-%23E05735)](https://github.com/fugerit-org/fj-doc-guides/blob/main/CHANGELOG.md) 
