@@ -8,7 +8,19 @@ This guide has been deprecated and will not be maintained, now you can refer to 
 [![HTML - Guide](https://img.shields.io/badge/HTML-Guide-blue?style=for-the-badge)](https://venusdocs.fugerit.org/guide/ "Go to project HTML documentation")
 [![PDF - Guide](https://img.shields.io/badge/PDF-Guide-red?style=for-the-badge)](https://venusdocs.fugerit.org/guide/fj-doc-guide.pdf "Go to project PDF documentation")
 
+Deprecation reasons : 
+
+* Most examples and guides are still working they are more complex than required by new version of Fugerit Venus Doc.
+* The new guide is organized in more coherent way
+* The new guide rely on AsciiDoc for formatting, which is more powerful than MaroDown
+
 ## Deprecation notice end
+
+## Archive notice start
+
+As of 2024-10-25, this repository is archived as a consequence of deprecation
+
+## Archive notice end
 
 This projects provides simple guides to [Venus - Fugerit Document Generation Framework (fj-doc)](https://github.com/fugerit-org/fj-doc) project.
 
